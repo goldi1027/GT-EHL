@@ -1,7 +1,10 @@
 //
 // Created by Jinchun Du on 12/9/2022.
 //
-
+/**
+ * Grid tree implementation
+ *
+ */
 #ifndef EBHL_EHL_TREE_H
 #define EBHL_EHL_TREE_H
 #include <vector>
@@ -17,13 +20,13 @@ namespace polyanya{
     class EhlKnn{
     private:
         //initialise ehl for ehl knn
-//        const EBHL_Ptr ehl;
         const EBHL_QPtr ehl_query;
     public:
         struct cor{
             Point min_point;
             Point max_point;
         };
+        //parent node's children indexes
         struct children{
             int top_right;
             int top_left;
@@ -109,10 +112,7 @@ namespace polyanya{
         vector<node> object_list;
         vector<vector<string>> object_keyword_list;
 
-        //test for int based keyword
-        unordered_map<string,int> keyword_int_mapper;
-
-
+        //object timestamp ist keeps track of all the object's location through all timestamps
         vector<vector<raw_object>> object_timestamp_list;
         vector<int> knn_test;
 
@@ -120,11 +120,8 @@ namespace polyanya{
         vector<int> added_objects;
         vector<int> free_objects;
 
-
-
         //query data structure
         vector<query> query_list;
-
         vector<node> objects_in_heap;
 
         EhlKnn(int mapHeight, int mapWidth, int size,  EBHL_QPtr ebq) : ehl_query(ebq) {initialise_tree(mapHeight, mapWidth, size);}
@@ -134,6 +131,12 @@ namespace polyanya{
             ehl_tree.clear();
         }
 
+        /**
+         * Initialise Grid Tree and begins to subdivide from root node
+         * @param mapHeight
+         * @param mapWidth
+         * @param size
+         */
 
         void initialise_tree(int mapHeight, int mapWidth, int size){
             ehl_tree.clear();
@@ -161,6 +164,11 @@ namespace polyanya{
 
 
 
+        /**
+         * Load keyword information for all objects
+         * Stores object keyword in an object list
+         * @param infile
+         */
         void load_keywords(istream& infile){
             if(!infile){
                 cout << "Cannot load object file!" << endl;
@@ -178,6 +186,10 @@ namespace polyanya{
             }
         }
 
+        /**
+         * Loading keywords for insertion experiment
+         * @param infile
+         */
         void load_insertion_keywords(istream& infile){
             if(!infile){
                 cout << "Cannot load object file!" << endl;
@@ -249,6 +261,10 @@ namespace polyanya{
             }
         }
 
+        /**
+         * Starting from root node (entire game map), continue to break down in 4 children until the child size is smaller than the given grid size
+         * @param current_node
+         */
         void decompose_node(node &current_node){
             //if either x or y exceeds grid size
             if(current_node.cordinate.max_point.x - current_node.cordinate.min_point.x > grid_size or current_node.cordinate.max_point.y - current_node.cordinate.min_point.y > grid_size){
@@ -310,6 +326,7 @@ namespace polyanya{
                 ehl_tree[current_node.nodeID].child.bottom_right = child_2.nodeID;
             }
             else{
+                //if the node is at it's cell level, then it doesn't have any children
                 ehl_tree[current_node.nodeID].child.top_left = -1;
                 ehl_tree[current_node.nodeID].child.top_right = -1;
                 ehl_tree[current_node.nodeID].child.bottom_left = -1;
@@ -318,91 +335,32 @@ namespace polyanya{
 
         }
 
-
-        void decompose_node_keyword(node &current_node){
-            if(current_node.cordinate.max_point.x - current_node.cordinate.min_point.x > grid_size){
-                double xMid = (current_node.cordinate.max_point.x + current_node.cordinate.min_point.x) / 2.0;
-                double yMid = (current_node.cordinate.max_point.y + current_node.cordinate.min_point.y) / 2.0;
-                node child_1;
-                child_1.cordinate.min_point = current_node.cordinate.min_point;
-                child_1.cordinate.max_point.x = xMid;
-                child_1.cordinate.max_point.y = yMid;
-                child_1.parent = current_node.nodeID;
-                child_1.nodeID = ehl_tree.size();
-                child_1.level = current_node.level + 1;
-                child_1.distance = INF;
-                child_1.has_object = false;
-                ehl_tree.push_back(child_1);
-                decompose_node(child_1);
-
-                node child_2;
-                child_2.cordinate.min_point.x = xMid;
-                child_2.cordinate.min_point.y = current_node.cordinate.min_point.y;
-                child_2.cordinate.max_point.x = current_node.cordinate.max_point.x;
-                child_2.cordinate.max_point.y = yMid;
-                child_2.parent = current_node.nodeID;
-                child_2.nodeID = ehl_tree.size();
-                child_2.level = current_node.level + 1;
-                child_2.distance = INF;
-                child_2.has_object = false;
-                ehl_tree.push_back(child_2);
-                decompose_node(child_2);
-
-                node child_3;
-                child_3.cordinate.min_point.x = current_node.cordinate.min_point.x;
-                child_3.cordinate.min_point.y = yMid;
-                child_3.cordinate.max_point.x = xMid;
-                child_3.cordinate.max_point.y = current_node.cordinate.max_point.y;
-                child_3.parent = current_node.nodeID;
-                child_3.level = current_node.level + 1;
-                child_3.nodeID = ehl_tree.size();
-                child_3.distance = INF;
-                child_3.has_object = false;
-                ehl_tree.push_back(child_3);
-                decompose_node(child_3);
-
-                node child_4;
-                child_4.cordinate.min_point.x = xMid;
-                child_4.cordinate.min_point.y = yMid;
-                child_4.cordinate.max_point = current_node.cordinate.max_point;
-                child_4.parent = current_node.nodeID;
-                child_4.level = current_node.level + 1;
-                child_4.nodeID = ehl_tree.size();
-                child_4.distance = INF;
-                child_4.has_object = false;
-                ehl_tree.push_back(child_4);
-                decompose_node(child_4);
-
-                ehl_tree[current_node.nodeID].child.top_left = child_3.nodeID;
-                ehl_tree[current_node.nodeID].child.top_right = child_4.nodeID;
-                ehl_tree[current_node.nodeID].child.bottom_left = child_1.nodeID;
-                ehl_tree[current_node.nodeID].child.bottom_right = child_2.nodeID;
-            }
-            else{
-                ehl_tree[current_node.nodeID].child.top_left = -1;
-                ehl_tree[current_node.nodeID].child.top_right = -1;
-                ehl_tree[current_node.nodeID].child.bottom_left = -1;
-                ehl_tree[current_node.nodeID].child.bottom_right = -1;
-            }
-
-        }
-
+        /**
+         * Add keyword for each object in the list to the Grid Tree
+         */
         void initialise_object_keywords(){
             for(int i = 0; i < object_list.size(); ++i){
                 traverse_keywords(i, ehl_tree[0]);
             }
         }
 
+        /**
+         * Traverse down the Grid Tree to add in the keyword from the root node to all of it's branches right till the base cell
+         * @param index
+         * @param current_node
+         */
         void traverse_keywords(const int &index, const node &current_node) {
+            //add keywords to the current node's keyword list
             ehl_tree[current_node.nodeID].has_object = true;
             for(int i = 0; i < object_keyword_list[index].size(); ++i){
                 ehl_tree[current_node.nodeID].keyword_list[object_keyword_list[index][i]]++;
             }
+            //if the current node has children
             if (current_node.child.top_left != -1) {
                 Point center;
                 center.x = (current_node.cordinate.max_point.x + current_node.cordinate.min_point.x) / 2;
                 center.y = (current_node.cordinate.max_point.y + current_node.cordinate.min_point.y) / 2;
-
+                //determine which node the object should be placed in according to the coordinates
                 if (object_list[index].cordinate.max_point.x >= center.x) {
                     //Indicates right side
                     if (object_list[index].cordinate.max_point.y >= center.y) {
@@ -418,39 +376,12 @@ namespace polyanya{
                     }
                 }
             }
+            //add the object index to the current base cell's object list
             ehl_tree[current_node.nodeID].cell_object_list.push_back(index);
             object_list[index].level = current_node.nodeID;
         }
 
 
-//        void insert_objects(const node &object, const node&current_node) {
-//            ehl_tree[current_node.nodeID].has_object = true;
-//            for(int i = 0; i < object_insertion_keyword_list[object.nodeID].size(); ++i){
-//                ehl_tree[current_node.nodeID].keyword_list[object_keyword_list[object.nodeID][i]]++;
-//            }
-//            if (current_node.child.top_left != -1) {
-//                Point center;
-//                center.x = (current_node.cordinate.max_point.x + current_node.cordinate.min_point.x) / 2;
-//                center.y = (current_node.cordinate.max_point.y + current_node.cordinate.min_point.y) / 2;
-//
-//                if (object_insertion_list[object.nodeID].cordinate.max_point.x >= center.x) {
-//                    //Indicates right side
-//                    if (object_insertion_list[object.nodeID].cordinate.max_point.y >= center.y) {
-//                        return insert_objects(object, ehl_tree[current_node.child.top_right]);
-//                    } else {
-//                        return insert_objects(object, ehl_tree[current_node.child.bottom_right]);
-//                    }
-//                } else {
-//                    if (object_insertion_list[object.nodeID].cordinate.max_point.y >= center.y) {
-//                        return insert_objects(object, ehl_tree[current_node.child.top_left]);
-//                    } else {
-//                        return insert_objects(object, ehl_tree[current_node.child.bottom_left]);
-//                    }
-//                }
-//            }
-//            ehl_tree[current_node.nodeID].cell_object_list.push_back(object.nodeID);
-//            object_insertion_list[object.nodeID].level = current_node.nodeID;
-//        }
         int keyword_traverse_test(const object &p, const node &current_node) {
             if (current_node.child.top_left != -1) {
                 Point center;
@@ -474,16 +405,12 @@ namespace polyanya{
             }
             return current_node.nodeID;
         }
-
-        void initialise_object(){
-            for(int i = 0; i < object_timestamp_list[0].size(); ++i){
-                object current_object;
-                current_object.id = object_timestamp_list[0][i].id;
-                current_object.cordinate = object_timestamp_list[0][i].new_location;
-                traverse(current_object,ehl_tree[0]);
-            }
-        }
-
+        /**
+         * Inserting object in Grid Tree without keyword information
+         * @param p
+         * @param current_node
+         * @return
+         */
         const node& traverse(const object &p, const node &current_node) {
             if (current_node.child.top_left != -1) {
                 ehl_tree[current_node.nodeID].has_object = true;
@@ -512,7 +439,13 @@ namespace polyanya{
             return current_node;
         }
 
-        //calculate min distance of a given point and the current rectangle
+
+        /**
+         * Calculate min distance of a given point and the current rectangle
+         * @param Point p
+         * @param current_rectangle
+         * @return
+         */
         double get_min_distance(Point &p, node &current_rectangle){
             double dist = 0.0;
             double min_i = 0.0; // minimum distance in dimension i
@@ -536,30 +469,17 @@ namespace polyanya{
             return dist;
         }
 
-        double get_max_distance(Point &q, node &current_rectangle){
-            double dist = 0.0;
-            double max_i = 0.0;
-            max_i = max(fabs(current_rectangle.cordinate.max_point.x - q.x), fabs(current_rectangle.cordinate.min_point.x - q.x));
-            dist += pow(double(max_i), 2.0);
-
-            max_i = max(fabs(current_rectangle.cordinate.max_point.y - q.y), fabs(current_rectangle.cordinate.min_point.y - q.y));
-            dist += pow(double(max_i), 2.0);
-
-            return dist;
-        }
-
+        /**
+         * Retrieve shortest distance through EHL for two given points
+         * @param q
+         * @param c
+         * @return
+         */
         double get_ehl_distance(Point &q, Point &c){
             ehl_query->set_start_goal(q,c);
             ehl_query->search();
             double distance = ehl_query->get_cost();
             return distance;
-        }
-
-        void test_init_search(int i){
-            knn_test.clear();
-            objects_in_heap.clear();
-            query_list[i].knn_object.clear();
-            query_list[i].query_score = INF;
         }
 
         void test(vector<double> &time){
@@ -583,10 +503,19 @@ namespace polyanya{
                 query_id = counter + 1;
             }
         }
+        /**
+         * Keyword experiment ran for all queries of a given map
+         * @param time
+         * @param distances
+         * @param total_candidates
+         * @param update_time
+         * @param updated
+         */
         void keyword_knn_experiment(vector<double> &time, vector<double> &distances, vector<int> &total_candidates, vector<double> &update_time, vector<int> &updated){
             warthog::timer timer =  warthog::timer ();
             warthog::timer update_timer =  warthog::timer ();
             int query_id = 0;
+            //iterates over all the timestamp
             for(int i = 0; i < timestamp_num; ++i){
                 //Updates for each timestamp after 0
                 if(i > 0){
@@ -603,40 +532,25 @@ namespace polyanya{
                     updated[i] = number_of_changes;
                 }
                 int counter;
+                //query id increments by 100 for each timestamp
                 for(int j = query_id; j < query_id + 100; ++j){
-//                    test_init_search(j);
-//                    double distance;
-//                    int current_candidate;
-//                    //keyword_knn_test(distance, j,current_candidate);
-//                    knn_tree_test(distance, j,current_candidate);
-//                    knn_test.shrink_to_fit();
-//                    distances[j] = distance;
-//                    total_candidates[j] = current_candidate;
-
                     timer.start();
                     keyword_knn(j);
-                    //keyword_static(j);
                     timer.stop();
                     time[j] = timer.elapsed_time_micro();
                     reverse(query_list[j].knn_object.begin(),query_list[j].knn_object.end());
-
-//                    for(int k = 0; k < knn_test.size(); ++k){
-//                        //if(query_list[j].knn_object[k] != knn_test[k]){
-//                        double epsilon = 0.01f;
-//                        if(fabs(distance - object_list[query_list[j].knn_object[k]].distance)>EPSILON*10){
-//                            for(int l = 0; l < knn_test.size(); ++l){
-//                                cout << "Weird " << j << " " << knn_test[l] << " " << query_list[j].knn_object[l] << " testdist: " << distance <<
-//                                     " fdist: " << object_list[query_list[j].knn_object[l]].distance << " candidates: " << current_candidate << endl;
-//                            }
-//                        }
-//                        break;
-//                    }
                     counter = j;
                 }
                 query_id = counter + 1;
             }
         }
 
+        /**
+         * Keyword insertion experiment
+         * @param insertion_time
+         * @param deletion_time
+         * @param probability
+         */
         void keyword_insertion_experiment(vector<double> &insertion_time, vector<double> &deletion_time, double probability){
             warthog::timer insert_timer =  warthog::timer ();
             warthog::timer delete_timer =  warthog::timer ();
@@ -681,27 +595,14 @@ namespace polyanya{
 
         }
 
-        void knn_computation_euclidean(vector<vector<int>> &knn_list, vector<double> &time, vector<int> &ehl_function, vector<int> &heap_push_time){
-                warthog::timer timer =  warthog::timer ();
-                for(int i = 0; i < query_list.size(); ++i){
-                    query_list[i].knn_object.clear();
-                    query_list[i].query_score = INF;
-                    int ehl_time = 0;
-                    int heap_push = 0;
-                    timer.start();
-                    basic_knn_euclidean(i, k_num, ehl_time, heap_push);
-                    timer.stop();
-                    time[i] += timer.elapsed_time_micro();
-
-                    query_list[i].knn_object.shrink_to_fit();
-                    reverse(query_list[i].knn_object.begin(), query_list[i].knn_object.end());
-                    knn_list[i] = query_list[i].knn_object;
-                    ehl_function[i] = ehl_time;
-                    heap_push_time[i] = heap_push;
-                }
-        }
-
-        //hard coded test for static knn
+        /**
+         * Finds the distance of all objects for a query to test correctness of GT-EHL
+         * Without keyword information - static knn
+         * @param distances
+         * @param query_id
+         * @param total_candidates
+         * @return
+         */
         bool knn_tree_test(double &distances,int query_id, int& total_candidates){
             vector<pair<double,int>> object_distance_list;
             for(int i = 0; i < object_timestamp_list[0].size(); ++i){
@@ -718,7 +619,13 @@ namespace polyanya{
             return true;
         }
 
-        //hard coded test for keyword knn
+        /**
+         * Finds the distance of all objects that matches the keyword for a given query
+         * @param distances
+         * @param query_id
+         * @param total_candidates
+         * @return
+         */
         bool keyword_knn_test(double &distances,int query_id, int& total_candidates){
             vector<pair<double,int>> object_distance_list;
             for(int i = 0; i < object_list.size(); ++i){
@@ -752,9 +659,15 @@ namespace polyanya{
             return true;
         }
 
-
-
-        //static knn calculation using euclidean distance for lowerbound for objects
+        /**
+         * Finds knn of objects without textual information
+         * Uses Euclidean distance as lowerbound for objects
+         * @param query_id
+         * @param k
+         * @param ehl_time
+         * @param heap_push
+         * @return
+         */
         bool basic_knn_euclidean(int &query_id, int& k, int &ehl_time, int &heap_push){
             clear_queue();
             double query_score = INF;
@@ -852,7 +765,11 @@ namespace polyanya{
             return true;
         }
 
-
+        /**
+         * Deleting object in Grid Tree
+         * @param object_id
+         */
+        //TODO could optimise the insertion and deletion of using object pointers instead of node id and object id
         void object_deletion(const int &object_id){
             int cell_id = object_list[object_id].level;
             ehl_tree[cell_id].cell_object_list.erase(remove(ehl_tree[cell_id].cell_object_list.begin(),ehl_tree[cell_id].cell_object_list.end(),object_id));
@@ -880,14 +797,20 @@ namespace polyanya{
             object_list[object_id].level = -1;
         }
 
+        /**
+         * Update Grid Tree when an object moves in a timestamp
+         * @param object_id
+         * @param new_location
+         * @return
+         */
         bool keyword_tree_update(const int &object_id, Point &new_location){
             int cell_id = object_list[object_id].level;
             object_list[object_id].cordinate.max_point = new_location;
+            //if the object moved away from the previous grid cell
             if(get_min_distance(new_location, ehl_tree[cell_id]) != 0){
                 //remove object id from previous location
                 ehl_tree[cell_id].cell_object_list.erase(remove(ehl_tree[cell_id].cell_object_list.begin(),ehl_tree[cell_id].cell_object_list.end(),object_id));
                 for(int i = 0; i < object_keyword_list[object_id].size(); ++i){
-                    //ehl_tree[cell_id].keyword_list.erase(object_keyword_list[object_id][i]);
                     if(ehl_tree[cell_id].keyword_list[object_keyword_list[object_id][i]] > 1){
                         ehl_tree[cell_id].keyword_list[object_keyword_list[object_id][i]]--;
                     }
@@ -900,7 +823,6 @@ namespace polyanya{
                 int parent_index = ehl_tree[cell_id].parent;
                 while(get_min_distance(new_location, ehl_tree[parent_index]) != 0){
                     for(int i = 0; i < object_keyword_list[object_id].size(); ++i){
-                        //ehl_tree[parent_index].keyword_list[object_keyword_list[object_id][i]]--;
                         if(ehl_tree[parent_index].keyword_list[object_keyword_list[object_id][i]] > 1){
                             ehl_tree[parent_index].keyword_list[object_keyword_list[object_id][i]]--;
                         }
