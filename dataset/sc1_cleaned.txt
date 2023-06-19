@@ -1,0 +1,100 @@
+unit versatile power high attack army ground hitpoint damage marine terran
+long unit heavily siege high deal range armor tank damage enemy terran structure massive
+unit variety ghost ability high stealthy emp cloak moderate hitpoint use terran special energy
+charge unit ability zealot power attack move hitpoint protoss faster damage mele high
+damage combat unit blink versatile ability attack stalker protoss moderate hitpoint high
+unit able spell templar power psionic storm cast like protoss feedback moderate spellcast high hitpoint energy
+fast unit low zergl attack numer zerg hitpoint damage mele high
+unit able attack roach quickly zerg strong hitpoint regenerate damage high durable
+unit banel effect low attack deal area zerg suicide explode hitpoint damage high
+charge unit able attack move ultralisk zerg hitpoint faster damage mele high massive
+bonus unit high heavy deal attack armor ground hitpoint damage maraud terran
+mechan yamato unit able ability high attack thor strike cannon hitpoint like use damage mm terran special massive
+transform unit versatile high attack air ground hitpoint damage terran vike
+transport unit prism able warp pylongener build moderate protoss hitpoint energy
+bonus unit heavily attack immortal deal armor hitpoint protoss damage high
+mechan unit able ability attack lance thermal use colossus protoss hitpoint damage like high special massive
+transfus unit queen ability zerg like larva use broodle spellcast moderate hitpoint energy spawn
+transport unit supply able warp overlord zerg build moderate hitpoint energy
+bonus lurker unit attack deal armor zerg hitpoint damage high burrow
+unit lord attack brood fly zerg hitpoint broodle damage high spawn massive
+maraud unit train build allow marine terran barrack
+unit train siege thor build tank factory allow terran vike
+gateway unit train templar build stalker protoss allow zealot high
+facility unit train immortal build robot protoss colossus allow observe
+unit train banel zergl roach build zerg pool allow spawn
+unit lord brood advance ultralisk allow zerg build like lair upgrade
+supply limit provide depot build terran increase vision
+train provide scv center build allow terran vision command
+train probe provide build protoss allow resource nexu
+unit warp power provide pylon build protoss allow
+unit train banshee starport build allow terran battlecruise raven vike
+unit engine research build bay allow terran upgrade
+unit armory ship build allow vehicle research terran upgrade
+gateway unit train templar build stalker protoss allow zealot high
+unit core cybernet protoss build allow research upgrade
+blink unit templar dark build council twilight protoss allow research upgrade
+unit train void carrier phoenix stargate build ray protoss allow
+unit train banel zergl roach overlord drone zerg hatchery build allow
+mutalisk unit train lord brood spire zerg build allow corruptor
+unit evolute zerg build chamber allow research upgrade
+unit high deal air turret defense damage structure terran missile
+unit high four deal bunker ground hold defense damage structure terran
+unit deal photon cannon ground protoss defense damage structure high
+shield unit provide battery nearby protoss structure energy
+unit forg build protoss allow research upgrade
+spore unit deal air zerg crawler defense damage structure high
+unit deal ground zerg defense damage sunken high colony structure
+unit deal spine ground zerg crawler defense damage structure high
+fusion unit research ship core build allow vehicle terran upgrade
+unit immortal build robot protoss bay allow colossus research observe upgrade
+train ghost research allow build academy terran upgrade
+science facility field research technology strike nuclear build like cloak allow terran advance
+fleet unit carrier beacon mothership tempest build protoss allow research upgrade
+upgrade unit templar high build protoss allow research archon archive
+unit train templar dark shrine build protoss allow
+upgrade unit pit zerg build infestor swarm allow host research infest
+unit train lord brood ultralisk hive zerg build allow
+unit cavern ultralisk zerg build allow research upgrade
+network transport unit zerg build create allow worm nydu
+unit sensor provide stealth tower build detect terran vision
+unit variety ghost ability high stealthy emp cloak moderate hitpoint use terran special energy
+bonus unit attack deal biology range short firebat moderate hitpoint damage terran
+transport unit heal medivac fly moderate hitpoint terran energy
+fast damage cliff unit attack agile reaper moderate hitpoint terran jump
+unit worker repair low gather attack scv build hitpoint damage resource terran
+mechan yamato unit able ability high attack thor strike cannon hitpoint like use damage mm terran special massive
+damage unit transfer ability attack distance psionic move quickly short ground moderate protoss use hitpoint adept
+unit two templar power attack merg create protoss hitpoint damage spellcast high archon
+unit carrier fly launch fighter interceptor hitpoint protoss high energy
+unit purify effect ability power attack disruptor nova deal area ground hitpoint protoss use damage high massive
+unit worker low gather attack probe build hitpoint protoss damage resource structure
+shield unit force ability field guardian like protoss use sentri spellcast moderate hitpoint energy
+damage combat unit blink versatile ability attack stalker protoss moderate hitpoint high
+unit attack deal air fly tempest hitpoint protoss damage high massive
+charge damage unit weapon attack fly ray protoss hitpoint void high increase
+transport unit prism able warp pylongener build moderate protoss hitpoint energy
+unit banel effect low attack deal area zerg suicide explode hitpoint damage high
+unit lord small fastmove low brood attack zerg hitpoint broodle damage spawn
+unit changel attack zerg moderate hitpoint damage enemy disguise
+bonus unit attack deal fly zerg hitpoint damage high corruptor massive
+unit worker low gather attack drone zerg build hitpoint damage resource structure
+unit attack deal air ground hydralisk zerg moderate hitpoint damage
+unit growth ability fungal zerg like moderate use infestor spellcast terran hitpoint energy infest
+bonus lurker unit attack deal armor zerg hitpoint damage high burrow
+mutalisk unit attack deal air fly ground zerg moderate hitpoint damage
+unit able roach quickly zerg strong hitpoint regenerate durable
+damage unit attack ground zerg swarm host locust moderate hitpoint burrow spawn
+charge unit able attack move ultralisk zerg hitpoint faster damage mele high massive
+transport unit supply able warp overlord zerg build moderate hitpoint energy
+unit fly provide stealth zerg moderate hitpoint detect over energy vision
+train provide scv center build allow terran vision command
+maraud unit train build allow marine terran barrack
+unit train siege thor build tank factory allow terran vike
+unit train banshee starport build allow terran battlecruise raven vike
+unit engine research build bay allow terran upgrade
+unit armory ship build allow vehicle research terran upgrade
+train ghost research allow build academy terran upgrade
+science facility field research technology strike nuclear build like cloak allow terran advance
+unit high four deal bunker ground hold defense damage structure terran
+unit high deal air turret defense damage structure terran missile

@@ -1,0 +1,100 @@
+twohand deal include damage variety long size short sword versatile moderate combat use shape come amount
+high deal axe damage swing quit sword heavy onehand slower weapon amount power
+attack character range arrow bow enemy use weapon distance make
+deal effect mace damage onehand moderate enemy blunt weapon amount armor heavily
+attack small backstab extra deal lightweight damage dagger moderate fast use weapon amount deliver
+quarterstaff twohand character high deal damage moderate use weapon amount strength score
+twohand high deal effect damage war heavy hammer enemy weapon amount armor heavily
+attack high range deal damage another crossbow enemy use weapon distance amount
+attack twohand character high spear deal damage score moderate enemy use weapon distance strength amount
+deal curve damage versatile scimitar sword onehand moderate fast combat amount
+twohand end high deal axelike effect damage one blade enemy halberd weapon spearlike armor amount heavily
+ball end attach deal effect damage onehand chain moderate enemy weapon flail armor amount heavily
+character dexter high range deal damage stone score moderate use weapon amount ammo sling
+attack range deal axe multiple throw damage thrown moderate enemy distance weapon amount use target
+cheap deal find simpl damage club onehand moderate weapon amount easi
+dart character dexter high range deal damage blowgun score use weapon amount ammo low
+large twohand high deal damage swing greatsword sword amount power slow
+deal katana curve damage versatile sword onehand combat fast moderate amount
+twohand high deal effect damage maul war enemy weapon amount armor heavily
+opponent deal effect damage disarm onehand whip moderate enemy weapon amount use unarmor
+range deal retrieve damage thrown moderate enemy distance weapon amount boomerang
+small shuriken range deal damage thrown enemy distance weapon amount quick success low
+dart character dexter high range deal damage blowgun score use weapon amount ammo low
+large twohand high shield bash heavy provide enemy use amount protect
+large twohand high deal axe damage swing battleax amount power slow
+twohand end high deal effect damage long one blade pole polearm enemy weapon spearlike armor amount heavily
+hand attack character dexter high range deal damage score crossbow moderate enemy use weapon distance amount
+attack range deal multiple throw damage dagger thrown moderate enemy distance weapon amount use target
+deal effect damage war onehand moderate enemy weapon amount armor heavily pick
+weapon kind character high handtohand deal unarm damage combat also use enemy strength proficient
+game magic nature extra complete property effect quest special damage obtain weapon treasure found
+wisdom spell twohand character high deal damage cast stave moderate use weapon amount score
+attack magic extra per grant curve speed scimitar sword onehand weapon wielder round
+magic special one vorpal sword hit instantly enemy weapon kill chance
+magic extra undead avenge grant evil damage creature sword weapon holy
+fight magic without sword control need weapon wielder dance
+magic extra grant moonblade damage special ability sword weapon wielder power
+bonus magic extra grant staff magic spellcast ability weapon wielder power
+spell magic allow firebal cast weapon wielder wand
+character dexter high lightweight score leather provide moderate use amount armor protect
+character dexter protect score mail provide mediumweight moderate use strength chain armor amount
+character high score plate mail heavy provide use strength amount armor protect
+character dexter score mail provide mediumweight moderate use strength amount splint armor protect
+character high score plate heavy provide use strength amount armor protect full
+character equip shield defense increase bash shape enemy use differ size come
+character dexter score mail provide mediumweight ring moderate use amount strength armor protect
+small character shield defense lightweight increase use buckler easi
+character dexter high stud lightweight score leather provide moderate use amount armor protect
+character dexter scale score mail provide mediumweight moderate use strength amount armor protect
+character dexter high protect pad lightweight score provide use amount armor low
+character dexter half score plate mediumweight provide moderate use strength amount armor protect
+type breastplate combine mediumweight provide moderate amount armor protect worn
+character dexter field score plate mediumweight provide moderate use strength amount armor protect
+type bonus character defense increase spellcast provide also worn robe armor
+hand character equip gauntlet property defense increase made worn differ material
+character greater size point heal certain hit instantly amount restore differ found player potion
+character player greater size point certain instantly amount restore differ found mana potion
+invisible character period potion time short harder hit combat player make
+attack character period movement time increase speed short player potion
+character period deal time allow damage increase short combat strength player potion
+character dexter period make time increase short harder hit agile combat player potion
+large extra character point heal hit instantly amount restore player potion
+attack character period movement longer time regular increase speed player potion oil
+character period maximum time health increase elixir point short hit player
+burn deal fire fiery coat damage hit enemy weapon oil
+cure character antipoison effect neutral poison use potion
+attack character period fire make time suscept increase resist short le firebas player potion
+attack character coldbas period make time suscept increase resist short le cold player potion
+attack acidbas character period make time suscept increase resist short le player acid potion
+electr attack character period make time suscept increase resist short le player potion electricalbas
+attack magic character period make time suscept increase resist short le player potion
+character period time allow underwater breath short player potion waterbreath
+easier character otherwise period potion make navigate time inaccess allow short area player fly
+character period time polymorph appear short player change potion
+invisible character period potion time move allow short harder hit combat player unnot make
+magic create character extra protect physic period time damage short provide barrier player stoneskin around potion
+character place equip inventory remove cure player potion
+inflict character remove disease player potion
+inflict character remove fear player potion
+inflict character remove paralysi player potion
+inflict blind character remove player potion
+inflict character confuse remove player potion
+scroll magic create character extra period physic time damage short provide barrier player around protect
+scroll spell magic character deal allow missile cast damage enemy distance player
+scroll invisible character period time move allow short harder hit combat player unnot make
+scroll reveal property identify inventory unknown ability item player
+scroll spell character deal allow firebal cast damage within area enemy player
+scroll character place equip inventory remove cure player
+dead scroll life character back allow reduce raise point hit party player bring member
+scroll locate teleport character allow player specify
+scroll magic create character extra period physic time damage short provide barrier player stoneskin around protect
+scroll character period time allow toward person charm short enemy player friendly make
+inflict scroll character remove paralysi player
+inflict scroll blind character remove player
+inflict scroll character remove disease player
+scroll locate teleport character level dungeon allow within player specify
+scroll attack magic character period time short provide player protect
+scroll spell character deal allow cast damage heal touch enemy player vampire
+scroll invisible character sight allow hidden see object true enemy illusion player
+inflict scroll character remove fear player

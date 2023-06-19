@@ -1,0 +1,100 @@
+purchase weapon metal use merchant iron make enemy loot found armor common
+purchase weapon metal highqual use silverit merchant make enemy rare loot found armor
+power dragon kill weapon dragonbone use material make obtain armor
+purchase weapon metal highqual veridium use merchant make enemy rare loot found armor
+purchase weapon use enchant merchant material enemy magic dweomer loot found armor
+elfroot purchase potion use merchant make herb wild salv found
+purchase potion deathroot use merchant make herb wild salv found
+purchase potion embrium use merchant make herb wild rare salv found
+purchase potion use merchant lotus herb make blood wild rare salv found
+purchase weapon glitterdust use enchant merchant magic enemy loot found powder armor
+orichalcum purchase weapon metal highqual use merchant make enemy rare loot found armor
+power substance purchase weapon lyrium use merchant enemy make magic red loot found armor
+fadetouch purchase weapon metal highqual use silverit merchant make magic enemy rare loot found armor
+fadetouch orichalcum purchase weapon metal highqual use merchant make magic enemy rare loot found armor
+fadetouch purchase highqual velvet use merchant material make magic enemy plush rare loot found fustian armor
+purchase leather strip use merchant material make enemy loot found armor common
+blueprint purchase schemat dwarven weapon use merchant craft enemy loot found armor
+purchase weapon spirit use enchant merchant material enemy magic tevint essence loot found armor
+power weapon amulet quest use enchant complete tevint chantry enemy loot found armor
+power purchase potion extract lotus ingredient merchant blood tevint enemy rare loot found
+grimoir power weapon quest use enchant magic complete blood tevint enemy tome loot found armor
+power purchase weapon use enchant merchant ruby blood gemstone tevint enemy loot found armor
+purchase potion salv use merchant lotus herb make blood tevint enemy rare loot found
+draught power potion use craft lotus ingredient blood tevint
+power potion use craft lotus ingredient elixir blood tevint
+power potion use craft lotus ingredient blood tevint tonic
+power potion use craft lotus ingredient blood tevint poultic
+power potion use craft lotus ingredient balm blood tevint
+power potion use craft lotus ingredient blood tevint mixtur
+power potion use craft lotus ingredient blood tevint infus
+concoct power potion use craft lotus ingredient blood tevint
+power substance purchase weapon lyrium use merchant make magic enemy raw loot found armor
+polish substance power weapon lyrium use craft make magic raw armor
+purchase luxury highqual use fabric merchant make silk enemy loot found armor
+upgrade weapon quest use material complete masterwork valuable enemy rare loot found armor certain
+power upgrade weapon quest use material branch magic complete vhenadahl enemy loot found armor certain
+power dragon kill weapon use material make scale obtain armor
+power dragon kill weapon use material make obtain tooth armor
+power potion dragon kill ingredient blood obtain
+power potion dragon marrow kill bone ingredient obtain
+power potion dragon kill ingredient obtain heart
+power potion dragon kill bile ingredient obtain
+power tongu potion dragon kill ingredient obtain
+power potion dragon kill ingredient obtain eye
+power potion dragon kill ingredient obtain claw
+power potion dragon kill ingredient obtain tail
+power potion wing dragon kill ingredient obtain
+power potion dragon kill ingredient scale obtain
+power teeth potion dragon kill ingredient obtain
+power potion dragon kill bone ingredient obtain
+power potion taint quest use enemy ingredient make complete wild loot found certain
+power potion taint land quest use make ingredient complete enemy loot found certain
+power potion sky taint quest use make ingredient complete enemy loot found certain
+sea power potion taint quest use make ingredient complete enemy loot found certain
+power potion taint quest use make ingredient complete enemy earth loot found certain
+power potion taint quest fire use make ingredient complete enemy loot found certain
+power potion taint frost quest use make ingredient complete enemy loot found certain
+power potion lightn taint quest use make ingredient complete enemy loot found certain
+power potion taint spirit quest use make ingredient complete enemy loot found certain
+power potion taint quest use make ingredient complete shadow enemy loot found certain
+power potion taint quest use make ingredient complete blood enemy loot found certain
+power potion undead taint quest use make ingredient complete enemy loot found certain
+power potion taint quest use darkspawn ingredient make complete enemy loot found certain
+power potion taint quest use make ingredient complete certain enemy loot found archdemon
+power potion taint quest use make ingredient blight complete enemy loot found certain
+power potion taint quest use fade make ingredient complete enemy loot found certain
+power potion god taint quest use make ingredient complete old enemy loot found certain
+power weapon metal steel quest use enemy make complete valuable red rare loot found armor certain
+power weapon metal volcano quest use certain make complete valuable enemy rare loot found armor aurum
+loot power weapon quest use material make complete valuable enemy rare obsidian found armor certain
+power leather quest use material make complete harden valuable enemy rare loot found armor certain
+power quest use material enemy make cloth complete valuable enchant rare loot found armor certain
+power quest use material make complete scale rare valuable enemy dragon loot found armor certain
+power weapon bone quest use material make complete rare valuable enemy dragon loot found armor certain
+power potion quest use material make dragon complete rare valuable enemy heart loot found certain
+power weapon quest use material certain make complete rare valuable enemy dragon loot found armor claw
+teeth power weapon quest use material make complete rare valuable enemy dragon loot found armor certain
+power weapon quest use material enemy make complete rare valuable tail dragon loot found armor certain
+power wing quest use material make complete rare valuable enemy dragon loot found armor certain
+power quest use material make complete scale rare valuable enemy dragon loot found armor certain
+potion quest ingredient complete blood rare valuable enemy dragon loot found certain
+potion quest ingredient complete venom rare valuable enemy dragon loot found certain
+potion quest bile ingredient complete rare valuable enemy dragon loot found certain
+tongu potion quest ingredient complete rare valuable enemy dragon loot found certain
+valuable potion quest ingredient complete rare eye enemy dragon loot found certain
+potion marrow quest ingredient complete rare valuable enemy dragon loot found certain
+fat potion quest ingredient complete rare valuable enemy dragon loot found certain
+potion quest brain ingredient complete rare valuable enemy dragon loot found certain
+potion found quest ingredient complete rare valuable enemy dragon loot gall certain
+potion quest ingredient oil complete rare valuable enemy dragon loot found certain
+power ancient weapon spirit quest use enchant material enemy magic complete tevint essence loot found armor certain
+grimoir power ancient weapon quest use enchant magic complete blood tevint enemy tome loot found armor certain
+power ancient weapon quest use enchant ruby complete blood tevint gemstone enemy loot found armor certain
+power ancient potion salv quest use lotus herb make complete blood tevint enemy loot found certain
+power ancient potion quest extract lotus ingredient complete blood tevint enemy loot found certain
+draught power ancient potion use craft lotus ingredient blood tevint
+power ancient potion use craft lotus ingredient elixir blood tevint
+power ancient potion use craft lotus ingredient blood tevint tonic
+power ancient potion use craft lotus ingredient blood tevint poultic
+power ancient potion use craft lotus ingredient balm blood tevint

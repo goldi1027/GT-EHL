@@ -1,0 +1,100 @@
+merchant armor common iron found weapon loot material make purchase enemy use
+rare complete certain armor power silverit loot found weapon metal make valuable enemy use quest
+rare complete certain armor power loot found veridium weapon metal make valuable enemy use quest
+rare complete certain armor power loot found orichalcum weapon metal make valuable enemy use quest
+certain complete armor ancient found dragonbone weapon loot material make enemy power use quest
+certain complete armor ancient found scale weapon loot material make enemy dragon power use quest
+potion obtain kill blood ingredient dragon power
+potion obtain kill heart ingredient dragon power
+potion obtain kill ingredient dragon power tongu
+eye potion obtain kill ingredient dragon power
+claw potion obtain kill ingredient dragon power
+potion obtain kill teeth ingredient dragon power
+potion obtain kill bone ingredient dragon power
+potion obtain kill ingredient bile dragon power
+potion obtain marrow kill ingredient dragon power
+merchant armor gemstone found green enchant loot weapon enemy purchase emerald use
+blue merchant armor gemstone found sapphire enchant loot weapon purchase enemy use
+merchant armor gemstone red found ruby enchant loot weapon purchase enemy use
+merchant armor gemstone found diamond enchant loot weapon enemy purchase clear use
+merchant armor gemstone amethyst found purple enchant loot weapon purchase enemy use
+merchant armor gemstone found multicolor opal enchant loot weapon purchase enemy use
+merchant armor gemstone found yellow enchant loot weapon topaz purchase enemy use
+merchant armor gemstone red found garnet enchant loot weapon purchase enemy use
+merchant armor gemstone found citrin yellow enchant loot weapon purchase enemy use
+blue merchant armor gemstone aquamarin found enchant loot weapon purchase enemy use
+merchant armor gemstone found green peridot enchant loot weapon purchase enemy use
+merchant armor gemstone found bluegreen purchase enchant loot weapon turquois enemy use
+merchant armor gemstone use found enchant loot weapon purchase enemy moonstone white
+merchant armor gemstone found black dark opal enchant loot weapon purchase enemy use
+certain complete armor gemstone red found bloodston enchant loot weapon enemy use quest
+certain complete armor found starlik star sapphire enchant loot weapon enemy pattern use quest
+certain complete armor gemstone found yellow enchant loot weapon enemy sunstone use quest
+certain complete armor gemstone found shadowstone dark enchant loot weapon enemy use quest
+certain complete armor gemstone red found dragonthorn enchant loot weapon enemy use quest
+armor obtain gemstone kill tooth enchant weapon dragon power use
+certain complete armor ancient gemstone found amulet tevint enchant loot weapon chantry enemy power use quest
+symbol certain complete armor ancient gemstone found tevint enchant loot weapon chantry enemy power use quest
+certain complete armor ancient gemstone found sigil tevint loot enchant chantry weapon enemy power use quest
+certain crest complete armor ancient gemstone found tevint enchant loot weapon chantry enemy power use quest
+certain complete signet imperium armor ancient gemstone found tevint enchant loot weapon enemy power use quest
+certain complete imperium seal armor ancient gemstone found tevint enchant loot weapon enemy power use quest
+certain crest imperium complete armor ancient gemstone found tevint enchant loot weapon enemy power use quest
+certain complete imperium armor ancient gemstone found insignia tevint enchant loot weapon enemy power use quest
+certain complete imperium badge armor ancient gemstone found tevint enchant loot weapon enemy power use quest
+certain complete imperium armor ancient gemstone found tevint enchant loot emblem weapon enemy power use quest
+certain complete armor ancient gemstone found amulet enchant loot weapon chantry enemy power use quest
+symbol certain complete armor gemstone ancient found enchant loot weapon chantry enemy power use quest
+certain complete armor gemstone ancient found sigil enchant loot weapon chantry enemy power use quest
+certain crest complete armor gemstone ancient found enchant loot weapon chantry enemy power use quest
+certain complete signet imperium armor gemstone ancient found enchant loot weapon enemy power use quest
+certain complete imperium seal armor gemstone ancient found enchant loot weapon enemy power use quest
+certain crest imperium complete armor gemstone ancient found enchant loot weapon enemy power use quest
+certain complete imperium armor gemstone ancient found insignia enchant loot weapon enemy power use quest
+certain complete imperium badge armor gemstone ancient found enchant loot weapon enemy power use quest
+certain complete imperium armor gemstone ancient found enchant loot emblem weapon enemy power use quest
+merchant common potion found elfroot loot salv herb make purchase enemy use
+rare complete certain power potion found herb loot salv spindlewe make enemy use quest
+lyrium rare complete certain power potion dust found loot salv herb make valuable enemy use quest
+certain complete power potion deathroot found poison loot salv herb make enemy use quest
+rare complete certain power embrium potion found loot salv herb make valuable enemy use quest
+rare complete certain power potion make loot found extract salv herb toxin valuable enemy use quest
+certain complete potion ancient use found blood loot salv herb make enemy power lotus quest
+rare complete certain power potion quest use black found loot salv herb make enemy lotus deadly
+rare complete certain power potion found dragonthorn loot salv herb make valuable enemy use quest
+potion obtain kill herb salv bane make dragon power use
+certain complete potion resist found tail damage grant loot salv herb make enemy fire firelizard use quest
+certain complete potion cold resist found venom frostbit damage grant loot salv herb make enemy use quest
+certain complete potion resist dust found spirit damage herb grant loot salv spectral make enemy use quest
+certain complete potion resist stormheart found electric damage grant loot salv herb make enemy use quest
+certain complete potion resist found nature damage blackweed grant loot salv herb make enemy use quest
+certain complete potion resist found bloodbriar blood damage magic grant loot salv herb make enemy use quest
+certain complete potion resist found dark nightshade magic damage grant loot salv herb make enemy use quest
+taintroot certain complete potion resist found corrupt damage grant loot salv herb make enemy use quest
+certain complete mental potion dreamroot resist found damage grant loot salv herb make enemy use quest
+certain complete potion resist physic found heartwood damage grant loot salv herb make enemy use quest
+certain complete potion increase power resist blackthorn attack found damage grant loot salv herb make enemy use quest
+potion found damage use blossom stamen enemy certain complete cold make increase resist winter grant loot salv herb quest
+potion found ability use enemy health certain complete golden root magic make increase salv grant loot regenerate herb quest
+potion strength found use rare constitute vigor enemy elixir certain complete dexter make increase grant loot herb power quest
+rare complete certain power potion increase willpow cun found magic grant loot herb make enemy elixir use quest
+potion found use critic rare chance enemy elixir certain complete dexter hit make increase grant loot herb power quest
+rare complete certain power potion increase strength attack found grant loot herb make enemy elixir use quest
+rare complete certain power potion increase spellpow found herb grant loot magic make enemy elixir use quest
+rare complete certain power potion increase health found constitute grant loot regenerate herb make enemy elixir use quest
+mana rare complete certain power potion increase willpow found grant loot regenerate herb make enemy elixir use quest
+merchant armor common increase spellpow found essence purchase enchant loot weapon magic grant lesser enemy use
+rare complete certain armor increase spellpow found greater essence even enchant loot weapon magic grant enemy use quest
+merchant armor common increase found fire essence purchase damage enchant loot weapon grant lesser enemy use
+rare complete certain armor increase found greater essence even damage enchant loot weapon grant fire enemy use quest
+merchant armor common cold increase found essence purchase damage enchant loot weapon grant lesser enemy use
+rare complete certain armor cold increase found greater essence even damage enchant loot weapon grant enemy use quest
+merchant armor common increase found electric essence purchase damage enchant loot weapon grant lesser enemy use
+rare complete certain armor increase found greater electric essence even damage enchant loot weapon grant enemy use quest
+merchant armor common increase found nature essence purchase damage enchant loot weapon grant lesser enemy use
+rare complete certain armor increase found nature greater essence even damage enchant loot weapon grant enemy use quest
+merchant armor common increase found dark essence purchase damage enchant loot weapon magic grant lesser enemy use
+armor found greater damage weapon use rare essence even enemy certain complete dark enchant magic increase grant loot quest
+merchant armor common increase found essence purchase damage enchant loot weapon grant corrupt lesser enemy use
+rare complete certain armor increase found greater essence even damage enchant loot weapon grant corrupt enemy use quest
+merchant mental armor common increase found essence purchase damage enchant loot weapon grant lesser enemy use
